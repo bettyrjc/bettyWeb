@@ -1,0 +1,203 @@
+/* <header class="header"></header>
+  <div class="divider yellow"></div>
+  <div class="container">
+    <section class="slogan main what_i_am"></section>
+    <section class="container_projects"></section>
+    <section class="about_me"></section>
+    <section class="blog_main"></section>
+    <section class="contact_with_me"></section>
+  </div>
+  <footer class="footer"></footer> */
+  /* import */
+  @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+  /* variables */
+  :root{
+    --color_header: rgb(217,217,217);
+    --color_amarillo:#FFDC64;
+    --color_blanco: white;
+    --color_amarillo_pastel: rgb(138, 130, 255);
+    --color_rojo_tostad:#E14747;
+    --color_gris_oscuro:#545454;
+    --color_azul_oscuro:#3A36FE ;
+    --color_azul_claro:#70CEC6;
+    --fuente: 'Poppins', sans-serif;
+  }
+  body{
+    margin:0;
+    font-family: var(--fuente);
+    /* background:var(--color_gris_oscuro) */
+  }
+ li{
+   list-style-type: none;
+ }
+ a{
+   text-decoration: none;
+ }
+ h1, p{
+   margin: 0%;
+ }
+  .header_img{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 100px;
+    width: 100%;
+  }
+  .header_img{
+    background: var(--color_header)
+  }
+  .header_img_circle{
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+  }
+  .img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .header_divider{
+    width: 40%;
+    height: 100%;
+  }
+  .header_container{
+    background: var(--color_amarillo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+  }
+  .red{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width:50%;
+    background: var(--color_azul_oscuro);
+  }
+  .header_items{
+    padding-right:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header_items_li{
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .header_items_li a{
+    color: var(--color_gris_oscuro)
+  }
+  .header_items_li a:hover{
+    font-size: 25px;
+  }
+
+  /* container */
+  .container{
+    margin: 0 10%;
+    background: var(--color_header)
+  }
+  .what_i_am{
+    width: 100%;
+    margin: 0%;
+    
+  }
+
+  .container_projects{
+    margin: o;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background: #E14747; */
+  }
+  .container_projects_item{
+    border-radius: 10px;
+    width: 95%;
+    height: 95%;
+    
+  }
+  .uno{
+    margin: 10px;
+    background: var(--color_blanco)
+  }
+  .container_img_proje{
+   margin-left: 10px;
+  }
+
+  .title_project{
+    text-align: center;
+    font-size: 25px;
+  }
+  .about_me{
+    padding: 10px 0;
+    background: var(--color_blanco)
+  }
+  .loquese{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+  .diseño, .lenguajes{
+    background: #FFDC64;
+    width: 32%;
+    border-radius: 10px;
+  }
+  .Tecnologia{
+    width: 33%;
+    background: #FFDC64;
+    border-radius: 10px;
+    
+  }
+  .container_labia{
+    display: flex;
+    justify-content: space-between;
+    
+    align-content: center;
+  }
+  .foto img{
+    width: 500px;
+    height: 400px;
+  }
+  .text_labia{
+    margin-top: 15%;
+  }
+  .foto_nombre{
+    background-image: url("fondo.png");
+    /* background: #3A36FE; */
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  .foto_foto{
+    border-radius: 50%;
+  }
+  .text{
+    margin: 0%;
+    text-align: center;
+  }
+  .tecnologies{
+    margin-top: 10px;
+    background: var(--color_gris_oscuro)
+  }
+  .container_tecnologies{
+    padding-top: 10px;
+    margin: 0%;
+    display: flex;
+    align-content: center;
+    justify-content: center
+  }
+  .container_tecnologies img{
+    height: 50px;
+  }
+  .title_tecnologies{
+    text-align: center;
+    font-size: 15px;
+  }
+  .footer{
+    background: var(--color_header);
+    height: 175px;
+  }
