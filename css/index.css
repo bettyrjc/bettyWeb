@@ -1,13 +1,5 @@
-/* <header class="header"></header>
-  <div class="divider yellow"></div>
-  <div class="container">
-    <section class="slogan main what_i_am"></section>
-    <section class="container_projects"></section>
-    <section class="about_me"></section>
-    <section class="blog_main"></section>
-    <section class="contact_with_me"></section>
-  </div>
-  <footer class="footer"></footer> */
+
+
   /* import */
   @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
   /* variables */
@@ -23,6 +15,7 @@
     --fuente: 'Poppins', sans-serif;
   }
   body{
+    width: 100%;
     margin:0;
     font-family: var(--fuente);
     /* background:var(--color_gris_oscuro) */
@@ -112,6 +105,11 @@
     width: 100%;
     /* background: #E14747; */
   }
+  .container_img_proje img{
+    width: 97%;
+    height: 100%;
+    padding: 0 10px;
+  }
   .container_projects_item{
     border-radius: 10px;
     width: 95%;
@@ -122,9 +120,7 @@
     margin: 10px;
     background: var(--color_blanco)
   }
-  .container_img_proje{
-   margin-left: 10px;
-  }
+  
 
   .title_project{
     text-align: center;
@@ -159,11 +155,17 @@
     align-content: center;
   }
   .foto img{
-    width: 500px;
-    height: 400px;
+    width: 95%;
+    height: 90%;
   }
   .text_labia{
     margin-top: 15%;
+    margin-right: 5%;
+    font-size: 80%;
+  }
+  .text_derecha{
+    margin-right: 0;
+    margin-left: 5%;
   }
   .foto_nombre{
     background-image: url("fondo.png");
@@ -200,4 +202,72 @@
   .footer{
     background: var(--color_header);
     height: 175px;
+  }
+
+  /* responsive */
+  @media screen and (max-width: 990px) {
+    .header_items_li{
+      font-size: 15px;
+    }
+  
+    .hide{
+      margin-left: -400px;
+    }
+    .hide_2{
+      margin-left: -250px;
+    }
+  }
+  @media screen and (max-width: 750px){
+    .header_items_li{
+      font-size: 20px;
+    }
+    .header_items_li a:hover{
+      font-size: 15px;
+    }
+    
+    .hide_2{
+      margin-left: -350px;
+    }
+    
+  }
+  @media screen and (max-width: 749px){
+    .header_container{
+      background: white
+    }
+    .header_img{
+      background-image: url("../img/3.png");
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      /* background-size: cover; Resize the background image to cover the entire container */
+    }
+    .header_img_circle{
+      margin-top: -200px;
+    }
+    .header_items{
+      padding: 0;
+      margin: 0;
+      background: var(--color_amarillo);
+      display: block;
+      position: relative;
+      z-index: 3;
+      top: -1450px;
+      
+    }
+    .header_items.active{
+      left: -80%;
+    }
+    .container{
+      margin: 0;
+    }
+    .hide_2{
+      background: var(--color_blanco)
+    }
+    .icon-menu{
+      position: relative;
+      z-index: 4;
+      background-image: url("../img/menu.png") ;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+     
+    }
   }
