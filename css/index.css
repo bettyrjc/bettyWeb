@@ -24,6 +24,7 @@
    list-style-type: none;
  }
  a{
+   color: black;
    text-decoration: none;
  }
  h1, p{
@@ -67,8 +68,11 @@
     position: relative;
     z-index: 1;
     height: 100%;
-    width:50%;
-    background: var(--color_azul_oscuro);
+    width:60%;
+    background: var(--color_amarillo_pastel);
+  }
+  .menu_burguer_barras{
+    margin-left: -20%;
   }
   .header_items{
     padding-right:30px;
@@ -108,7 +112,7 @@
   .container_img_proje img{
     width: 97%;
     height: 100%;
-    padding: 0 10px;
+    padding: 10px 10px;
   }
   .container_projects_item{
     border-radius: 10px;
@@ -122,9 +126,12 @@
   }
   
 
-  .title_project{
+  .title_project {
     text-align: center;
     font-size: 25px;
+  }
+  a .title_project  {
+    color: var(--color_amarillo_pastel) !important
   }
   .about_me{
     padding: 10px 0;
@@ -134,45 +141,47 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
-    height: 400px;
+    height: 200px;
     margin-bottom: 10px;
   }
   .diseño, .lenguajes{
-    background: #FFDC64;
+    background: var(--color_amarillo_pastel);
     width: 32%;
-    border-radius: 10px;
   }
   .Tecnologia{
     width: 33%;
-    background: #FFDC64;
-    border-radius: 10px;
-    
+    background:var(--color_amarillo_pastel);
+  }
+  .loquese_img{
+    margin-top: 10%;
+    margin-left: 30%;
   }
   .container_labia{
-    display: flex;
-    justify-content: space-between;
-    
     align-content: center;
+    position: relative;
   }
-  .foto img{
-    width: 95%;
+  .foto img {
+    width: 100%;
     height: 90%;
+    opacity: 0.7;
+    
   }
   .text_labia{
-    margin-top: 15%;
-    margin-right: 5%;
-    font-size: 80%;
+    width: 100%;
+    position: absolute;
+    z-index: 6;
+    align-items: center;
+    top: 50%;
+    left: 20%;
+    font-size: 3em;
+    color: black;
   }
-  .text_derecha{
-    margin-right: 0;
-    margin-left: 5%;
+  .analisis .text_labia{
+    left: 30%;
   }
   .foto_nombre{
+    height: 300px;
     background-image: url("fondo.png");
-    /* background: #3A36FE; */
-    display: flex;
-    justify-content: center;
-    align-items: center
   }
   .foto_foto{
     border-radius: 50%;
@@ -182,8 +191,10 @@
     text-align: center;
   }
   .tecnologies{
+    margin-bottom: 10px;
+    height: 70px;
     margin-top: 10px;
-    background: var(--color_gris_oscuro)
+    background: var(--color_header)
   }
   .container_tecnologies{
     padding-top: 10px;
@@ -193,7 +204,7 @@
     justify-content: center
   }
   .container_tecnologies img{
-    height: 50px;
+    height: 30px;
   }
   .title_tecnologies{
     text-align: center;
@@ -203,7 +214,11 @@
     background: var(--color_header);
     height: 175px;
   }
-
+.loquese_text{
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+}
   /* responsive */
   @media screen and (max-width: 990px) {
     .header_items_li{
@@ -216,8 +231,16 @@
     .hide_2{
       margin-left: -250px;
     }
+    .loquese_img{
+      margin-top: 15%;
+      margin-left: 25%;
+    }
   }
   @media screen and (max-width: 750px){
+    .loquese_img{
+      margin-top: 15%;
+      margin-left: 23%;
+    }
     .header_items_li{
       font-size: 20px;
     }
@@ -228,11 +251,21 @@
     .hide_2{
       margin-left: -350px;
     }
-    
-  }
-  @media screen and (max-width: 749px){
+    /* .header{
+      position: fixed;
+    } */
     .header_container{
-      background: white
+      background: var(--color_blanco);
+    }
+    .menu_burguer_barras{
+      margin-left: 20px;
+      position: relative;
+      z-index: 5;
+      cursor: pointer;
+      height: 35px;
+      width: 35px;
+      background-repeat: no-repeat;
+      background-image: url(../img/menu.png);
     }
     .header_img{
       background-image: url("../img/3.png");
@@ -244,17 +277,29 @@
       margin-top: -200px;
     }
     .header_items{
+      width: 60%;
       padding: 0;
       margin: 0;
-      background: var(--color_amarillo);
+      background: rgba(147, 151, 156, 0.884);
       display: block;
       position: relative;
       z-index: 3;
-      top: -1450px;
+      left: -1230px;
       
     }
     .header_items.active{
-      left: -80%;
+      left: -30%;
+      top: 90px;
+    }
+    .header_items_li{
+      border-bottom: 1px solid var(--color_header)
+    }
+    .header_items_li a{
+      font-size: 30px;
+      color: black
+    }
+    .header_items_li a:hover{
+      background: gray;
     }
     .container{
       margin: 0;
@@ -269,5 +314,51 @@
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
      
+    }
+    .loquese{
+      height: 200px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .header_items.active{
+      left: -30%;
+      top: 55px;
+    }
+  .container_projects{
+    margin: o;
+    display: block;
+    width: 100%;
+  }
+  .uno{
+    margin-left: 15px;
+  }
+    .loquese{
+      width: 100%;
+      height: 620px;
+      display: block;
+    }
+    
+  .diseño, .lenguajes, .Tecnologia{
+    width:90%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+}
+  @media screen and (max-width: 510px) {
+    .uno{
+      margin-left: 10px;
+    }
+    .header_items.active{
+      left: -25%;
+      top: 90px;
+    }
+  }
+  @media screen and (max-width: 350px){
+    .header_items_li a{
+      font-size: 20px;
+      color: black
+    }
+    .header_items.active{
+      top: 65px;
     }
   }
