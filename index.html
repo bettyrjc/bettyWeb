@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/jpg" href="img/3.png"/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,18 +21,21 @@
       <i class="menu_burguer_barras" id="toggle_click_burguer"></i>
       <div class="red hide_2"></div>
       <ul class="header_items burguer_menu" id="showMenu" >
-        <li class="header_items_li"><a href="">Inicio</a></li>
-        <li class="header_items_li"><a href="">Proyectos</a></li>
-        <li class="header_items_li"><a href="">Blog</a></li>
+        <li class="header_items_li"><a href="#slogan">Inicio</a></li>
+        <li class="header_items_li"><a href="#projects">Proyectos</a></li>
+        <!-- <li class="header_items_li"><a href="">Blog</a></li> -->
         <li class="header_items_li"><a href="#aboutme">Sobre mi</a></li>
         <li class="header_items_li"><a href="#contact">Comunicate</a></li>
       </ul>
     </div>
   </header>
   <div class="container">
-    <section class="slogan main what_i_am">
+    <section class="slogan main what_i_am" id="slogan">
       <img src="img/main.png" alt="main" class="slogan_img" width="100%">
     </section>
+    <div class="divider">
+      <h2 class="title_about_me"  id="projects">Proyectos</h2>
+    </div>
     <section class="container_projects">
       <div class="container_projects_item uno">
         <div class="container_img_proje">
@@ -49,6 +53,48 @@
     <section class="container_projects">
       <div class="container_projects_item uno">
         <div class="container_img_proje">
+          <img src="img/ENTRARSALIR.png" alt="" >
+        </div>
+        <a href="https://bettyrjc.github.io/entrar-salir/"><h1 class="title_project">Inicio de sesion</h1></a>
+      </div>
+      <div class="container_projects_item uno">
+        <div class="container_img_proje">
+          <img src="img/OUTLOOK.png" alt="" >
+        </div> <a href="https://bettyrjc.github.io/copia_outlook/">
+          <h1 class="title_project">Copia de Outlook</h1></a>
+      </div>
+    </section>
+    <section class="container_projects">
+      <div class="container_projects_item uno">
+        <div class="container_img_proje">
+          <img src="img/agFranquicias.png" alt="" >
+        </div>
+        <a href="https://lamerayema.com/"><h1 class="title_project">AgFranquicias</h1></a>
+      </div>
+      <div class="container_projects_item uno">
+        <div class="container_img_proje">
+          <img src="img/movie.png" alt="" >
+        </div> <a href="https://bettyrjc.github.io/movie-practice/">
+          <h1 class="title_project">Pagina de movies</h1></a>
+      </div>
+    </section>
+    <section class="container_projects">
+      <div class="container_projects_item uno">
+        <div class="container_img_proje">
+          <img src="img/APIVIDEO.png" alt="" >
+        </div>
+        <a href="https://bettyrjc.github.io/tarea-APIs/"><h1 class="title_project">Api Movies</h1></a>
+      </div>
+      <div class="container_projects_item uno">
+        <div class="container_img_proje">
+          <img src="img/videoBetty.png" alt="" >
+        </div> <a href="https://bettyrjc.github.io/reto-2/">
+          <h1 class="title_project">BettyTube</h1></a>
+      </div>
+    </section>
+    <section class="container_projects">
+      <div class="container_projects_item uno">
+        <div class="container_img_proje">
           <img src="img/office.png" alt="" >
         </div> <a href="https://bettyrjc.github.io/officeXpress/"><h1 class="title_project"> OfficeXpress</h1></a>
       </div>
@@ -58,7 +104,10 @@
         </div> <a href="https://bettyrjc.github.io/betask/" blank="_target"><h1 class="title_project"> Betty task</h1></a>
       </div>
     </section>
-    <section id ="aboutme" class="about_me">
+    <div class="divider" id ="aboutme">
+      <h2 class="title_about_me">Mis conocimientos</h2>
+    </div>
+    <section  class="about_me">
       <div class="loquese">
         <div class="diseño">
           <img src="./img/code.png" class="loquese_img">
@@ -70,7 +119,7 @@
         </div>
         <div class="lenguajes">
           <img class="loquese_img" src="./img/computer.png">
-          <h3 class="loquese_text">Iteractividad</h3>
+          <h3 class="loquese_text">Certificados</h3>
         </div>
       </div>
       <div class="tecnologies">
@@ -90,19 +139,12 @@
         </div>
         <!-- <h1 class="text_labia">Ideas a tus proyectos</h1> -->
       </div>
-      <div class="container_labia">
+      <div class="container_labia analisis">
         <div class="foto">
-          <img src="img/laptop.png" alt="">
+          <img src="img/analisis.jpg" alt="">
         </div>
-        <!-- <h1 class="text_labia text_derecha">Conectandote con la web</h1> -->
-        </div>
-        <div class="container_labia analisis">
-            <div class="foto">
-                <img src="img/analisis.jpg" alt="">
-            </div>
-            <!-- <h1 class="text_labia">Codigo limpio</h1> -->
-        </div> 
-        
+        <!-- <h1 class="text_labia">Codigo limpio</h1> -->
+      </div>   
       <div class="foto_nombre">
           <div class="text">
             <h1 class="title_perfil">Betty Jimenez</h1>
@@ -115,9 +157,18 @@
 
     <section id="contact" class="contact_with_me"> -->
 <!--       
-    </section>
-  </div>-->
-  <footer class="footer"></footer> 
+    </section>-->
+  </div>
+  <footer class="footer">
+    <div class="whoarewe">
+    </div>
+    <div class="social">
+      <a href="https://twitter.com/bettyrjce" class="social-link twitter"></a>
+      <a href="https://github.com/bettyrjc" class="social-link github"></a>
+      <a href="https://instagram.com/bettyrjc" class="social-link instagram"></a>
+    </div>
+  </footer> 
+
   <script src="js/index.js"></script>
 </body>
 </html>
